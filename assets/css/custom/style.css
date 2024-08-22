@@ -258,6 +258,7 @@ header .mobile-menu > ul > li > a {
 
 .n-banner {
   position: relative;
+  height: 100vh;
 }
 
 .bnr-carousel .owl-item.active .bnr-txt,
@@ -336,8 +337,6 @@ header .mobile-menu > ul > li > a {
   transform: translateY(-50%);
   z-index: 2;
 }
-
-
 
 .n-banner .bnr-carousel-nav-container i {
   color: var(--white);
