@@ -6,6 +6,9 @@
   .hambarger-menu {
     display: none;
   }
+  .funfact-right {
+    padding-left: 0px;
+  }
   .our-blog > div {
     max-width: 960px;
     margin: 0px auto;

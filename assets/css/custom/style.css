@@ -15,6 +15,7 @@ html {
 :root {
   --primarycolour: #48a1f5;
   --white: #ffffff;
+  --grey: #999696;
 }
 body {
   background: #181818;
@@ -140,7 +141,7 @@ header .logo > a > img {
   position: relative;
 }
 .slide-contact .contact-info ul li a {
-  color: #999696;
+  color: var(--grey);
   margin-bottom: 10px;
   display: block;
   position: relative;
@@ -760,7 +761,7 @@ header .mobile-menu > ul > li > a {
 }
 
 .service .funfact-left p {
-  color: var(--white) fff9e;
+  color: var(--grey);
   text-align: left;
 }
 
@@ -779,6 +780,11 @@ header .mobile-menu > ul > li > a {
   font-size: 50px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.funfact-number span:nth-child(3) {
+  color: var(--primarycolour);
+  font-weight: 100;
 }
 
 .funfact-text > p {
@@ -805,7 +811,7 @@ header .mobile-menu > ul > li > a {
 }
 
 .main-service-left > p {
-  color: #999696;
+  color: var(--grey);
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -865,7 +871,7 @@ header .mobile-menu > ul > li > a {
 }
 
 .portfolio-title > h3 {
-  color: #999696;
+  color: var(--grey);
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -934,7 +940,7 @@ header .mobile-menu > ul > li > a {
   overflow: hidden;
 }
 .award .award-left h4 {
-  color: #999696;
+  color: var(--grey);
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -1102,7 +1108,7 @@ header .mobile-menu > ul > li > a {
   padding: 100px 0px;
 }
 .our-team-left > h3 {
-  color: #999696;
+  color: var(--grey);
   font-size: 18px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -1314,7 +1320,7 @@ header .mobile-menu > ul > li > a {
   padding-left: 20%;
 }
 .our-blog-left > span {
-  color: #999696;
+  color: var(--grey);
   font-weight: 600;
   display: block;
   font-size: 18px;
@@ -1399,7 +1405,7 @@ footer .f-logo img {
 }
 .f-description > p,
 .f-subscribe-description > p {
-  color: #999696;
+  color: var(--grey);
 }
 .f-social-icon ul li {
   display: inline-block;
@@ -1428,7 +1434,7 @@ footer .f-logo img {
 .f-menu ul li,
 .f-contact p a {
   list-style: none;
-  color: #999696;
+  color: var(--grey);
   margin-bottom: 20px;
 }
 .f-contact p a > i {
