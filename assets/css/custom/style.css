@@ -44,6 +44,12 @@ header .logo > a > img {
   text-transform: uppercase;
 }
 
+.navbar-nav > li:nth-child(6) > a {
+  border-radius: 20px;
+  background-color: var(--primarycolour);
+  padding: 10px 20px !important;
+}
+
 .navbar-nav .sub-menu {
   position: absolute;
   left: 0px;
@@ -279,20 +285,27 @@ header .mobile-menu > ul > li > a {
   background: url(../../images/banner-img/hero-bg1.webp);
 }
 
+/* .n-banner .bnr-card2 {
+  background: url(../../images/banner-img/hero-bg2.webp);
+} */
+
+.n-banner .bnr-card3 {
+  background: url(../../images/banner-img/hero-bg3.webp);
+}
+
+.n-banner .bnr-card4 {
+  background: url(../../images/banner-img/hero-bg4.webp);
+}
+
 .n-banner .bnr-card .d-flex {
   height: 100vh;
 }
 
-.n-banner .bnr-card1 .bnr-txt {
+.n-banner .bnr-card .bnr-txt {
   color: var(--white);
   font-size: 110px;
 
   font-weight: 700;
-}
-
-.n-banner .bnr-card2 {
-  background: url(../../images/banner-img/hero-bg2.webp);
-  background-position: bottom center;
 }
 
 .left-sec a {
@@ -301,11 +314,15 @@ header .mobile-menu > ul > li > a {
   font-size: 20px;
   position: relative;
   display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
   transition: all 100ms ease-in-out;
 }
 
 .left-sec a:hover {
   color: var(--primarycolour);
+  border: 1px solid var(--primarycolour);
 }
 
 .left-sec a::after {
@@ -731,7 +748,7 @@ header .mobile-menu > ul > li > a {
 .main-funfact {
   position: relative;
   padding: 60px 80px;
-  top: calc(0px - 100px);
+  top: calc(0px - 50px);
   background: linear-gradient(267.18deg, #161616 0%, #080808 100%);
   background-position: center;
   background-size: cover;
@@ -755,7 +772,7 @@ header .mobile-menu > ul > li > a {
 
 .service .funfact-left > h1 {
   color: var(--white);
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -767,6 +784,13 @@ header .mobile-menu > ul > li > a {
 
 .funfact-right {
   padding-left: 80px;
+}
+
+.funfact-box {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1px solid var(--grey);
 }
 
 .funfact-number h1 {
@@ -859,9 +883,9 @@ header .mobile-menu > ul > li > a {
 }
 
 .main-service-card:hover {
-  box-shadow: 0px 1px 44px 4px rgba(255, 74, 23, 0.75);
-  -webkit-box-shadow: 0px 1px 44px 4px rgba(255, 74, 23, 0.75);
-  -moz-box-shadow: 0px 1px 44px 4px rgba(255, 74, 23, 0.75);
+  box-shadow: 0px 1px 44px 4px rgba(72, 161, 245, 0.75);
+  -webkit-box-shadow: 0px 1px 44px 4px rgba(72, 161, 245, 0.75);
+  -moz-box-shadow: 0px 1px 44px 4px rgba(72, 161, 245, 0.75);
 }
 
 /* portfolio section start  */
@@ -1029,7 +1053,7 @@ header .mobile-menu > ul > li > a {
 }
 .video-title h1 {
   color: var(--white);
-  font-size: 50px;
+  font-size: 34px;
   font-weight: 600;
 }
 .main-video {
@@ -1136,7 +1160,10 @@ header .mobile-menu > ul > li > a {
 .our-team .card-info {
   position: absolute;
   bottom: 20px;
-  left: 22px;
+  left: 0px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 20px 20px 0px;
 }
 .our-team .card-info > h2 {
   color: var(--white);
@@ -1145,7 +1172,7 @@ header .mobile-menu > ul > li > a {
   font-weight: 600;
 }
 .our-team .card-info p {
-  color: var(--white) fffa6;
+  color: var(--white);
 }
 .our-team .our-team-social {
   position: absolute;
@@ -1421,7 +1448,13 @@ footer .f-logo img {
   align-items: center;
   justify-content: center;
   margin-right: 18px;
+  transition: all 300ms ease-in-out;
 }
+.f-social-icon ul li a:hover {
+  color: var(--primarycolour);
+  border: 2px solid var(--primarycolour);
+}
+
 .f-service .f-title > p,
 .f-contact > h6,
 .f-subscribe > h6 {

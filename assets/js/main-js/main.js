@@ -4,7 +4,7 @@ $(".bnr-carousel").owlCarousel({
   loop: true,
   dots: false,
   autoplay: true,
-  autoplayTimeout: 6000,
+  autoplayTimeout: 8000,
   autoplaySpeed: 2000,
   navContainer: [".bnr-carousel-nav-container"],
   navText: [$(".nav-left"), $(".nav-right")],
@@ -32,6 +32,7 @@ $(".portfolio-carousel").owlCarousel({
   center: true,
   dots: true,
   nav: false,
+
   autoplay: true,
   autoplaySpeed: 2000,
   autoplayTimeout: 3500,
@@ -308,7 +309,7 @@ counters.forEach((counter) => {
 
     if (c < target) {
       counter.innerText = `${Math.ceil(c + increment)}`;
-      setTimeout(updateCounter, 1);
+      setTimeout(updateCounter, 50);
     } else {
       counter.innerText = target;
     }
