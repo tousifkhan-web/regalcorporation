@@ -83,6 +83,22 @@
     margin-left: 50px;
   }
 
+  .main-service-right > div {
+    padding: 0px 30px;
+  }
+
+  .main-service-card h2 {
+    font-size: 30px;
+  }
+  .video-title h1 {
+    font-size: 20px;
+  }
+
+  .main-rim {
+    width: 60px;
+    height: 60px;
+  }
+
   .main-funfact {
     top: 0px;
   }
@@ -105,7 +121,6 @@
     margin-left: auto;
   }
 
-  .video-title h1,
   .our-team-left h2,
   .our-blog-left h1,
   .description-heading > h1 {
