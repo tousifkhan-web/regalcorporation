@@ -67,7 +67,10 @@
   header .logo > a > img {
     max-width: 200px;
   }
-  .n-banner .bnr-card1 .bnr-txt {
+  .n-banner .bnr-card .d-flex {
+    height: 50vh;
+  }
+  .n-banner .bnr-card .bnr-txt {
     color: var(--white);
     font-size: 50px;
   }

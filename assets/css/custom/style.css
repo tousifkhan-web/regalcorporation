@@ -265,7 +265,6 @@ header .mobile-menu > ul > li > a {
 
 .n-banner {
   position: relative;
-  height: 100vh;
 }
 
 .bnr-carousel .owl-item.active .bnr-txt,
@@ -275,7 +274,6 @@ header .mobile-menu > ul > li > a {
 }
 
 .n-banner .bnr-card {
-  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,10 +282,6 @@ header .mobile-menu > ul > li > a {
 .n-banner .bnr-card1 {
   background: url(../../images/banner-img/hero-bg1.webp);
 }
-
-/* .n-banner .bnr-card2 {
-  background: url(../../images/banner-img/hero-bg2.webp);
-} */
 
 .n-banner .bnr-card3 {
   background: url(../../images/banner-img/hero-bg3.webp);
