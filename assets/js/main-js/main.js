@@ -93,7 +93,7 @@ $(".our-team-owl").owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    480: {
       items: 2,
     },
     1000: {

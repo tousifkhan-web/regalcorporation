@@ -44,7 +44,7 @@ header .logo > a > img {
   text-transform: uppercase;
 }
 
-.navbar-nav > li:nth-child(6) > a {
+.navbar-nav > li:last-child > a {
   border-radius: 20px;
   background-color: var(--primarycolour);
   padding: 10px 20px !important;
@@ -165,9 +165,10 @@ header .logo > a > img {
   top: -100px;
   transform: translateY(100px);
   transition: all 0.6s ease-in-out;
-  background: #181818;
+  background: rgba(24, 24, 24, 0.95);
   padding: 20px 0px;
   z-index: 9;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .cursor {
@@ -251,7 +252,13 @@ header .mobile-menu > ul > li {
 }
 
 header .mobile-menu > ul > li > a {
-  color: var(--primarycolour);
+  color: var(--white);
+}
+
+.mobile-menu ul li:last-child a {
+  color: var(--white);
+  border-radius: 20px;
+  background-color: var(--primarycolour);
 }
 
 .hambarger-mobile-menu > i {
@@ -273,22 +280,25 @@ header .mobile-menu > ul > li > a {
   --animate-repeat: infinite;
 }
 
-.n-banner .bnr-card {
+.n-banner .bnr-card1 {
+  background: url(../../images/banner-img/hero-bg1.webp);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.n-banner .bnr-card1 {
-  background: url(../../images/banner-img/hero-bg1.webp);
-}
-
 .n-banner .bnr-card3 {
   background: url(../../images/banner-img/hero-bg3.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .n-banner .bnr-card4 {
   background: url(../../images/banner-img/hero-bg4.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .n-banner .bnr-card .d-flex {
@@ -364,7 +374,7 @@ header .mobile-menu > ul > li > a {
 .scroll-down {
   border: 2px solid var(--white);
   border-radius: 20px;
-  bottom: calc(23% - 50px);
+  bottom: calc(23% - 120px);
   height: 50px;
   left: 0;
   margin: 0 auto;
@@ -1147,6 +1157,7 @@ header .mobile-menu > ul > li > a {
 }
 .our-team .main-card .card-img img {
   transition: all 0.8s ease;
+  width: 100%;
 }
 .our-team .main-card:hover .card-img img {
   transform: scale(1.06) translateY(8px);
@@ -1204,6 +1215,7 @@ header .mobile-menu > ul > li > a {
   background: transparent;
   margin-left: 71px;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 .our-team-right button.owl-next {
   width: 60px;
@@ -1219,6 +1231,7 @@ header .mobile-menu > ul > li > a {
   background: transparent;
   margin-left: 0;
   transition: all 0.3s ease;
+  z-index: 2;
 }
 .our-team-right button:hover {
   background-color: var(--primarycolour);

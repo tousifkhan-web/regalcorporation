@@ -29,6 +29,10 @@
   .banner .bnr-heading > h1 {
     font-size: 56px;
   }
+  .n-banner .bnr-card .bnr-txt {
+    color: var(--white);
+    font-size: 70px;
+  }
   .main-service-left h1,
   .portfolio-title > h2,
   .award .award-left h1 {
@@ -50,6 +54,9 @@
   .banner .bnr-heading > h1 {
     font-size: 56px;
   }
+  .bnr-carousel-nav-container {
+    display: none !important;
+  }
   .main-service-left h1,
   .portfolio-title > h2,
   .award .award-left h1 {
@@ -68,11 +75,16 @@
     max-width: 200px;
   }
   .n-banner .bnr-card .d-flex {
-    height: 50vh;
+    height: 70vh;
   }
   .n-banner .bnr-card .bnr-txt {
     color: var(--white);
-    font-size: 50px;
+    font-size: 40px;
+    margin-left: 50px;
+  }
+
+  .main-funfact {
+    top: 0px;
   }
   .banner .bnr-heading > h1,
   .service .funfact-left > h1,
