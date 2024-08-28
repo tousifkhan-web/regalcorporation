@@ -84,10 +84,13 @@ $(".our-team-owl").owlCarousel({
   margin: 10,
   nav: true,
   dots: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  autoplayTimeout: 5000,
   navContainer: [".our-team-right"],
   navText: [
-    '<i class="fa-solid fa-arrow-right-long"></i>',
     '<i class="fa-solid fa-arrow-left-long"></i>',
+    '<i class="fa-solid fa-arrow-right-long"></i>',
   ],
   responsive: {
     0: {
@@ -292,6 +295,7 @@ btn.on("click", function (e) {
 
 $(".hambarger-mobile-menu").click(function () {
   $(".mobile-menu").toggleClass("show");
+  $("#toggle").toggleClass("active");
 });
 
 // counter

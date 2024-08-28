@@ -255,15 +255,58 @@ header .mobile-menu > ul > li > a {
   color: var(--white);
 }
 
-.mobile-menu ul li:last-child a {
+.mobile-menu ul li a {
   color: var(--white);
   border-radius: 20px;
   background-color: var(--primarycolour);
 }
 
-.hambarger-mobile-menu > i {
+/* .hambarger-mobile-menu > i {
   color: var(--white);
   font-size: 35px;
+} */
+
+.button_container {
+  position: relative;
+  right: 0;
+  top: 0;
+  height: 27px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+.button_container:hover {
+  opacity: 0.7;
+}
+.button_container.active .top {
+  transform: translateY(9px) translateX(0) rotate(45deg);
+  background: #fff;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #fff;
+}
+.button_container.active .bottom {
+  transform: translateY(-9px) translateX(0) rotate(-45deg);
+  background: #fff;
+}
+.button_container span {
+  background: var(--white);
+  border: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 9px;
+}
+.button_container span:nth-of-type(3) {
+  top: 18px;
 }
 
 /* header end here  */
@@ -1201,7 +1244,7 @@ header .mobile-menu > ul > li > a {
   visibility: visible;
   opacity: 1;
 }
-.our-team-right button.owl-prev {
+.our-team-right button.owl-next {
   width: 60px;
   height: 35px;
   color: var(--white);
@@ -1217,7 +1260,7 @@ header .mobile-menu > ul > li > a {
   transition: all 0.3s ease;
   z-index: 2;
 }
-.our-team-right button.owl-next {
+.our-team-right button.owl-prev {
   width: 60px;
   height: 35px;
   color: var(--white);
