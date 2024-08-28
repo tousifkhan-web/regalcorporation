@@ -310,6 +310,7 @@ header .mobile-menu > ul > li > a {
 
 .n-banner {
   position: relative;
+  height: 100vh;
 }
 
 .bnr-carousel .owl-item.active .bnr-txt,

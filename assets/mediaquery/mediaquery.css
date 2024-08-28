@@ -74,6 +74,9 @@
   header .logo > a > img {
     max-width: 200px;
   }
+  .banner {
+    height: 70vh;
+  }
   .n-banner .bnr-card .d-flex {
     height: 70vh;
   }
