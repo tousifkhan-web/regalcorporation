@@ -84,6 +84,7 @@ $(".our-team-owl").owlCarousel({
   margin: 10,
   nav: true,
   dots: false,
+  autoplayHoverPause: true,
   autoplay: true,
   autoplaySpeed: 2000,
   autoplayTimeout: 5000,
@@ -107,32 +108,6 @@ $(".our-team-owl").owlCarousel({
     },
   },
 });
-
-// $('.testimonial-owl').owlCarousel({
-//     loop:true,
-//     margin:10,
-//     nav:true,
-//     autoplayTimeout: 6000,
-//     autoplaySpeed: 5000,
-//     // dotContainer: [".testimonial-dots"],
-//     dots: true,
-//     navText:
-//     [
-//         '<i class="fa-solid fa-arrow-right-long"></i>',
-//         '<i class="fa-solid fa-arrow-left-long"></i>'
-//     ],
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:1
-//         },
-//         1000:{
-//             items:1
-//         }
-//     }
-// })
 
 $(".our-blog-owl").owlCarousel({
   loop: true,
