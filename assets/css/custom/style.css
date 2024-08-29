@@ -984,6 +984,7 @@ header .mobile-menu > ul > li > a {
   bottom: 20px;
   left: 0px;
   padding: 20px;
+  width: 280px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 0px 20px 20px 0px;
 }
