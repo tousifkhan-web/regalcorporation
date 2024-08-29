@@ -95,7 +95,6 @@
   }
   .video-title h1 {
     font-size: 21px;
-    text-align: justify;
   }
 
   .main-rim {
@@ -135,5 +134,8 @@
   .our-blog-left h1,
   .description-heading > h1 {
     font-size: 40px;
+  }
+  .description-heading > h1 {
+    font-size: 30px;
   }
 }

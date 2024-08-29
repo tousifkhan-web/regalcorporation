@@ -112,7 +112,7 @@ $(".our-team-owl").owlCarousel({
 $(".our-blog-owl").owlCarousel({
   loop: true,
   margin: 10,
-  nav: true,
+  nav: false,
   dots: false,
   items: 2,
   autoplay: true,

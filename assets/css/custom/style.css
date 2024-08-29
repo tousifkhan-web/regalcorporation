@@ -228,7 +228,6 @@ header .logo > a > img {
 }
 
 header .mobile-menu {
-  background-color: #181818;
   overflow: hidden;
   height: 0px;
   padding-top: 0px;
@@ -239,7 +238,6 @@ header .mobile-menu {
 header .mobile-menu.show {
   height: auto;
   padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 header .mobile-menu > ul {
@@ -1127,7 +1125,7 @@ header .mobile-menu > ul > li > a {
   background-position: center;
   background-repeat: no-repeat;
   padding: 90px 30px;
-  margin-top: 100px;
+
   border-radius: 14px;
   overflow: hidden;
 }
