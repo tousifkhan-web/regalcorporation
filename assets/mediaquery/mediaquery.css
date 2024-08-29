@@ -26,6 +26,9 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .cursor {
+    display: none;
+  }
   .banner .bnr-heading > h1 {
     font-size: 56px;
   }
@@ -136,6 +139,6 @@
     font-size: 40px;
   }
   .description-heading > h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
