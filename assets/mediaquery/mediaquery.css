@@ -6,6 +6,9 @@
   .hambarger-menu {
     display: none;
   }
+  .n-banner .bnr-card .bnr-txt {
+    margin-left: 100px;
+  }
   .funfact-right {
     padding-left: 0px;
   }
