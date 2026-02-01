@@ -3,9 +3,7 @@
   #navbarNav {
     display: none !important;
   }
-  .hambarger-menu {
-    display: none;
-  }
+
   .n-banner .bnr-card .hc-1 {
     margin-left: 100px;
   }
@@ -22,9 +20,9 @@
 }
 
 @media (min-width: 1200px) {
-  .hambarger-mobile-menu {
+  /* .hambarger-mobile-menu {
     display: none;
-  }
+  } */
 }
 
 /* // Medium devices (tablets, less than 992px) */
@@ -48,6 +46,9 @@
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+  .hambarger-menu {
+    display: none !important;
+  }
   .n-banner .bnr-card1 .bnr-txt {
     color: var(--white);
   }
