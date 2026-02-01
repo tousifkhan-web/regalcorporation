@@ -36,7 +36,6 @@
     font-size: 56px;
   }
 
-  .portfolio-title > h2,
   .award .award-left h1 {
     font-size: 36px;
   }
@@ -59,7 +58,6 @@
     display: none !important;
   }
 
-  .portfolio-title > h2,
   .award .award-left h1 {
     font-size: 36px;
   }
@@ -82,15 +80,11 @@
     height: 70vh;
   }
   .n-banner .bnr-card .hc-1 {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
   .main-service-right > div {
     padding: 0px 30px;
-  }
-
-  .video-title h1 {
-    font-size: 21px;
   }
 
   .main-rim {
@@ -108,7 +102,6 @@
     top: 0px;
   }
 
-  .portfolio-title > h2,
   .award .award-left h1 {
     font-size: 40px;
   }
@@ -122,14 +115,5 @@
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .our-team-left h2,
-  .our-blog-left h1,
-  .description-heading > h1 {
-    font-size: 40px;
-  }
-  .description-heading > h1 {
-    font-size: 20px;
   }
 }

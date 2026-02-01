@@ -1,25 +1,37 @@
+//  AOS / Animate On scroll
+
+AOS.init({
+  duration: 1000,
+  offset: 80,
+});
+
 // banner section owl carousel
 
-$(".bnr-carousel").owlCarousel({
-  loop: true,
-  dots: false,
-  autoplay: true,
-  autoplayTimeout: 8000,
-  autoplaySpeed: 2000,
-  navContainer: [".bnr-carousel-nav-container"],
-  navText: [$(".nav-left"), $(".nav-right")],
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-    },
-  },
-});
+// $(".bnr-carousel").owlCarousel({
+//   loop: true,
+//   dots: false,
+//   nav: false,
+//   autoplay: false,
+//   // autoplayTimeout: 8000,
+//   // autoplaySpeed: 2000,
+//   // navContainer: [".bnr-carousel-nav-container"],
+//   // navText: [$(".nav-left"), $(".nav-right")],
+//   responsive: {
+//     0: {
+//       items: 1,
+//     },
+//     600: {
+//       items: 1,
+//     },
+//     1000: {
+//       items: 1,
+//     },
+//   },
+// });
+
+// copyright year auto update
+document.getElementById("copyright-year").textContent =
+  new Date().getFullYear();
 
 // portfolio section owl carousel
 
@@ -203,7 +215,7 @@ class Cursor {
     //cancel loop if mouse stops moving
     const delta = Math.sqrt(
       Math.pow(this.target.x - this.cursor.x, 2) +
-        Math.pow(this.target.y - this.cursor.y, 2)
+        Math.pow(this.target.y - this.cursor.y, 2),
     );
     if (delta < 0.001) {
       cancelAnimationFrame(this.raf);
@@ -233,7 +245,7 @@ function s() {
   t.classList.remove("hover-interactive-text");
 }
 function o(t) {
-  t.addEventListener("mouseover", q), t.addEventListener("mouseout", s);
+  (t.addEventListener("mouseover", q), t.addEventListener("mouseout", s));
 }
 document.addEventListener("DOMContentLoaded", function () {
   let hoverLink = document.querySelectorAll(".hover-img");

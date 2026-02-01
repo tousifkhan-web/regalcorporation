@@ -51,7 +51,8 @@ body {
 }
 
 .hc-5 {
-  font-size: 18px;
+  color: var(--white);
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -81,11 +82,11 @@ header .logo > a > img {
   text-transform: uppercase;
 }
 
-.navbar-nav > li:last-child > a {
+/* .navbar-nav > li:last-child > a {
   border-radius: 20px;
   background-color: var(--primarycolour);
   padding: 10px 20px !important;
-}
+} */
 
 .navbar-nav .sub-menu {
   position: absolute;
@@ -383,15 +384,13 @@ footer .f-logo img {
   border: 2px solid var(--primarycolour);
 }
 
-.f-service .f-title > p,
-.f-contact > h6,
-.f-subscribe > h6 {
-  color: var(--white);
-  font-size: 18px;
+.f-service .hc-5,
+.f-contact > .hc-5,
+.f-subscribe > .hc-5 {
   margin-bottom: 35px;
-  font-weight: 600;
   text-transform: capitalize;
 }
+
 .f-menu ul li,
 .f-contact p a {
   list-style: none;

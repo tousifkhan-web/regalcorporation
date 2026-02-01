@@ -5,13 +5,17 @@
   height: 100vh;
 }
 
-.bnr-carousel .owl-item.active .hc-1,
+/* .bnr-carousel .owl-item.active .hc-1,
 .bnr-carousel .owl-item.cloned .hc-1 {
   animation: fadeInRight ease-in-out 3s 1.5s both;
   --animate-repeat: infinite;
   margin-left: 100px;
+} */
+.n-banner .hc-1 {
+  animation: fadeInRight ease-in-out 3s 0.3s both;
+  --animate-repeat: infinite;
+  margin-left: 100px;
 }
-
 .n-banner .bnr-card1 {
   background: url(../../images/banner-img/hero-bg1.webp);
   background-position: center;
@@ -302,11 +306,9 @@
   padding: 60px 0px 60px;
 }
 
-.main-service-left > p {
+.main-service-left > .hc-5 {
   color: var(--grey);
-  font-size: 18px;
   margin-bottom: 20px;
-  font-weight: 600;
 }
 
 .main-service-left .hc-2 {
@@ -399,17 +401,9 @@
   position: relative;
 }
 
-.portfolio-title > h3 {
+.portfolio-title > .hc-5 {
   color: var(--grey);
-  font-size: 18px;
   margin-bottom: 20px;
-  font-weight: 600;
-}
-
-.portfolio-title > h2 {
-  color: var(--white);
-  font-size: 50px;
-  font-weight: 600;
 }
 
 .portfolio-img-box {
@@ -552,15 +546,11 @@
 /* award end  *************************************************************/
 
 /* video section start  ***************************************************/
-.video {
+/* .video {
   padding: 80px 0px;
   position: relative;
 }
-.video-title h1 {
-  color: var(--white);
-  font-size: 34px;
-  font-weight: 600;
-}
+
 .main-video {
   position: relative;
   overflow: hidden;
@@ -626,7 +616,7 @@
     border: white 0.5em solid;
     opacity: 0;
   }
-}
+} */
 
 /* video section end  ********************************************************/
 
@@ -636,17 +626,10 @@
   position: relative;
   padding: 100px 0px;
 }
-.our-team-left > h3 {
+.our-team-left > .hc-5 {
   color: var(--grey);
-  font-size: 18px;
-  margin-bottom: 20px;
-  font-weight: 600;
 }
-.our-team-left h2 {
-  color: var(--white);
-  font-size: 50px;
-  font-weight: 600;
-}
+
 .our-team .main-card {
   position: relative;
 }
@@ -672,11 +655,9 @@
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 0px 20px 20px 0px;
 }
-.our-team .card-info > h2 {
-  color: var(--white);
-  font-size: 22px;
+.our-team .card-info > .hc-5 {
+  font-size: 20px;
   margin-bottom: 6px;
-  font-weight: 600;
 }
 .our-team .card-info p {
   color: var(--white);
@@ -752,16 +733,11 @@
 .our-blog-left {
   padding-left: 20%;
 }
-.our-blog-left > span {
+.our-blog-left > .hc-5 {
   color: var(--grey);
-  font-weight: 600;
-  display: block;
-  font-size: 18px;
 }
-.our-blog-left h1 {
-  color: var(--white);
-  font-size: 50px;
-  font-weight: 600;
+
+.our-blog-left .hc-2 {
   margin-bottom: 45px;
 }
 .our-btn,
@@ -790,11 +766,8 @@
   bottom: 3%;
   padding: 20px;
 }
-.our-blog-right .main-card .card-text > h3 {
-  color: var(--white);
-  font-size: 22px;
+.our-blog-right .main-card .card-text > .hc-5 {
   left: 10px;
-  font-weight: 600;
 }
 
 /* our blog end here  *************************************************/
@@ -815,13 +788,10 @@
   border-radius: 14px;
   overflow: hidden;
 }
-.description-heading > h1 {
-  color: var(--white);
-  font-size: 50px;
-  font-weight: 600;
+.description-heading > .hc-2 {
   margin-bottom: 40px;
 }
-.description-heading > h1 span {
+.description-heading > .hc-2 span {
   font-style: italic;
 }
 
