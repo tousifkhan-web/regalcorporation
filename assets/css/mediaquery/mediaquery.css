@@ -6,7 +6,7 @@
   .hambarger-menu {
     display: none;
   }
-  .n-banner .bnr-card .bnr-txt {
+  .n-banner .bnr-card .hc-1 {
     margin-left: 100px;
   }
   .funfact-right {
@@ -35,11 +35,7 @@
   .banner .bnr-heading > h1 {
     font-size: 56px;
   }
-  .n-banner .bnr-card .bnr-txt {
-    color: var(--white);
-    font-size: 70px;
-  }
-  .main-service-left h1,
+
   .portfolio-title > h2,
   .award .award-left h1 {
     font-size: 36px;
@@ -55,7 +51,6 @@
 @media (max-width: 768px) {
   .n-banner .bnr-card1 .bnr-txt {
     color: var(--white);
-    font-size: 60px;
   }
   .banner .bnr-heading > h1 {
     font-size: 56px;
@@ -63,7 +58,7 @@
   .bnr-carousel-nav-container {
     display: none !important;
   }
-  .main-service-left h1,
+
   .portfolio-title > h2,
   .award .award-left h1 {
     font-size: 36px;
@@ -86,9 +81,7 @@
   .n-banner .bnr-card .d-flex {
     height: 70vh;
   }
-  .n-banner .bnr-card .bnr-txt {
-    color: var(--white);
-    font-size: 40px;
+  .n-banner .bnr-card .hc-1 {
     margin-left: 50px;
   }
 
@@ -96,9 +89,6 @@
     padding: 0px 30px;
   }
 
-  .main-service-card h2 {
-    font-size: 30px;
-  }
   .video-title h1 {
     font-size: 21px;
   }
@@ -117,9 +107,7 @@
   .main-funfact {
     top: 0px;
   }
-  .banner .bnr-heading > h1,
-  .service .funfact-left > h1,
-  .main-service-left h1,
+
   .portfolio-title > h2,
   .award .award-left h1 {
     font-size: 40px;
