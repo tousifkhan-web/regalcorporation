@@ -256,13 +256,22 @@
 
 .funfact-right {
   padding-left: 80px;
+  flex-basis: 33%;
+  column-gap: clamp(0.313rem, -0.293rem + 1.714vw, 1.25rem);
+  /* scale between 5px at 565px and 20px at 1440px */
+}
+
+.funfact-right > div {
+  flex-shrink: 0;
 }
 
 .funfact-box {
-  width: 180px;
-  height: 180px;
+  width: clamp(5rem, 0.964rem + 11.429vw, 11.25rem);
+  height: clamp(5rem, 0.964rem + 11.429vw, 11.25rem);
+  /* scale between 80px at 565px and 180px at 1440px */
   border-radius: 50%;
   border: 1px solid var(--grey);
+  padding: 5px;
 }
 
 .funfact-number h1 {
@@ -273,7 +282,7 @@
 
 .funfact-number span {
   color: var(--white);
-  font-size: 50px;
+  font-size: clamp(1.125rem, -0.166rem + 3.657vw, 3.125rem);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -286,6 +295,9 @@
 .funfact-text > p {
   color: var(--white);
   text-transform: capitalize;
+  text-align: center;
+  font-size: clamp(0.75rem, 0.589rem + 0.457vw, 1rem);
+  margin-bottom: 0px;
 }
 
 .funfact-text span {
@@ -378,7 +390,8 @@
   transition: 0.5s;
   transform-style: preserve-3d;
   font-weight: 100;
-  font-size: 25px;
+  font-size: clamp(1.25rem, 1.048rem + 0.571vw, 1.563rem);
+  /* scale between 20px at 565px and 25px at 1440px */
 }
 
 .main-service-card:hover .hc-4 {
@@ -455,95 +468,6 @@
   background-color: var(--primarycolour);
 }
 /* portfolio section end  */
-
-/* awart section start  */
-/* .award {
-  padding: 100px 0px;
-  position: relative;
-  overflow: hidden;
-}
-.award .award-left h4 {
-  color: var(--grey);
-  font-size: 18px;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-.award .award-left h1 {
-  color: var(--white);
-  font-size: 58px;
-  font-weight: 600;
-}
-.award-left h3 {
-  color: var(--primarycolour);
-  font-size: 30px;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-.award-left h2 {
-  color: var(--white);
-  font-size: 22px;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-.award-left p {
-  color: var(--white) fffa6;
-  margin-bottom: 7px;
-}
-.award-owl-nav {
-  overflow: hidden;
-}
-.award-owl-nav button.owl-prev,
-.award-owl-nav button.owl-next {
-  color: var(--white);
-  position: absolute;
-  font-size: 23px;
-}
-.award-owl-nav button.owl-prev {
-  width: 60px;
-  height: 35px;
-  border-radius: 5px;
-  border: 2px solid var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  transition: all 0.3s ease;
-}
-.award-owl-nav button.owl-next {
-  width: 60px;
-  height: 35px;
-  border-radius: 5px;
-  border: 2px solid var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  margin-left: 71px;
-  transition: all 0.3s ease;
-}
-.award-owl-nav button:hover {
-  background-color: var(--primarycolour);
-  border: 2px solid var(--primarycolour);
-}
-.award-animation-shap {
-  position: absolute;
-  right: -8%;
-  width: 15%;
-  height: 59%;
-  top: 23%;
-  display: inline-block;
-  background-color: #000;
-  transform: rotate(45deg);
-  animation: animo-x 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-@keyframes anim-x {
-  50% {
-    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-} */
-
-/* award end  *************************************************************/
 
 /* video section start  ***************************************************/
 /* .video {
@@ -722,10 +646,95 @@
 }
 
 /* our team section end  **********************************************************/
+/* award section start  */
+.award {
+  padding: 100px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.award .award-left .hc-5 {
+  margin-bottom: 20px;
+  color: var(--grey);
+}
+
+.award .award-owl .award-top {
+  padding: 50px;
+}
+/* .award-left h3 {
+  color: var(--primarycolour);
+  font-size: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.award-left h2 {
+  color: var(--white);
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.award-left p {
+  color: var(--white);
+  margin-bottom: 7px;
+} */
+.award-owl-nav {
+  overflow: hidden;
+}
+.award-owl-nav button.owl-prev,
+.award-owl-nav button.owl-next {
+  color: var(--white);
+  position: absolute;
+  font-size: 23px;
+}
+.award-owl-nav button.owl-prev {
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.award-owl-nav button.owl-next {
+  width: 60px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  margin-left: 71px;
+  transition: all 0.3s ease;
+}
+.award-owl-nav button:hover {
+  background-color: var(--primarycolour);
+  border: 2px solid var(--primarycolour);
+}
+.award-animation-shap {
+  position: absolute;
+  right: -8%;
+  width: 15%;
+  height: 59%;
+  top: 23%;
+  display: inline-block;
+  background-color: #000;
+  transform: rotate(45deg);
+  animation: animo-x 9s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes anim-x {
+  50% {
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* award end  *************************************************************/
 
 /* our blog start here  ***************************************************/
 
-.our-blog {
+/* .our-blog {
   padding: 100px 0;
   position: relative;
   overflow: hidden;
@@ -768,7 +777,7 @@
 }
 .our-blog-right .main-card .card-text > .hc-5 {
   left: 10px;
-}
+} */
 
 /* our blog end here  *************************************************/
 

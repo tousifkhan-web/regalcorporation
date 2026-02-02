@@ -63,12 +63,14 @@ $(".portfolio-carousel").owlCarousel({
 
 $(".award-owl").owlCarousel({
   loop: true,
+  autoplay: true,
   margin: 10,
   nav: true,
   dots: false,
   nav: true,
-  autoplaySpeed: 2200,
-  autoplayTimeout: 2200,
+  autoplaySpeed: 2000,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
   navText: [
     '<i class="fa-solid fa-arrow-left-long"></i>',
     '<i class="fa-solid fa-arrow-right-long"></i>',
@@ -76,15 +78,15 @@ $(".award-owl").owlCarousel({
   navContainer: [".award-owl-nav"],
   responsive: {
     0: {
-      items: 1,
+      items: 2,
     },
     600: {
-      items: 2,
+      items: 3,
       dots: true,
       nav: true,
     },
     1000: {
-      items: 2,
+      items: 3,
     },
   },
 });
@@ -97,7 +99,7 @@ $(".our-team-owl").owlCarousel({
   nav: true,
   dots: false,
   autoplayHoverPause: true,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 2000,
   autoplayTimeout: 5000,
   navContainer: [".our-team-right"],
@@ -108,6 +110,7 @@ $(".our-team-owl").owlCarousel({
   responsive: {
     0: {
       items: 1,
+      stagePadding: 30,
     },
     480: {
       items: 2,

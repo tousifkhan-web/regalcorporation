@@ -34,10 +34,6 @@
     font-size: 56px;
   }
 
-  .award .award-left h1 {
-    font-size: 36px;
-  }
-
   .our-blog > div {
     max-width: 720px;
     margin: 0px auto;
@@ -57,10 +53,6 @@
   }
   .bnr-carousel-nav-container {
     display: none !important;
-  }
-
-  .award .award-left h1 {
-    font-size: 36px;
   }
 
   .our-blog > div {
@@ -84,10 +76,6 @@
     margin-left: 20px;
   }
 
-  .main-service-right > div {
-    padding: 0px 30px;
-  }
-
   .main-rim {
     width: 60px;
     height: 60px;
@@ -103,9 +91,6 @@
     top: 0px;
   }
 
-  .award .award-left h1 {
-    font-size: 40px;
-  }
   .main-funfact {
     padding: 32px 31px;
   }
@@ -116,5 +101,23 @@
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .our-team .card-info {
+    width: 230px;
+  }
+  .our-team .card-info > .hc-5 {
+    font-size: 18px;
+  }
+  .our-team .card-info p {
+    font-size: 14px;
+  }
+  .our-team .our-team-social {
+    top: 15px;
+  }
+  .our-team .our-team-social ul {
+    margin-bottom: 10px;
   }
 }
