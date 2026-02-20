@@ -13,7 +13,8 @@ html {
 }
 
 :root {
-  --primarycolour: #48a1f5;
+  --primarycolour: #00ddff;
+  /* #48a1f5; */
   --white: #ffffff;
   --grey: #999696;
 }
@@ -72,8 +73,8 @@ header {
 }
 
 header .navbar-brand > img {
-  max-width: clamp(11.25rem, 8.333rem + 8.102vw, 15.625rem);
-  /* scale between 180px at 576px and 250px at 1440px */
+  max-width: clamp(6.25rem, 3.125rem + 8.333vw, 10.625rem);
+  /* scale between 100px at 600px and 170px at 1440px */
 }
 
 .navbar-nav li {
@@ -299,7 +300,7 @@ footer {
   position: relative;
 }
 footer .f-logo img {
-  max-width: 250px;
+  max-width: 170px;
 }
 .f-description > p {
   max-width: 350px;
