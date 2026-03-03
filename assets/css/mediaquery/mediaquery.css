@@ -59,6 +59,10 @@
     max-width: 540px;
     margin: 0px auto;
   }
+
+  .p-banner .container .wrapper .inner-box {
+    max-width: 100%;
+  }
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -101,6 +105,19 @@
     padding-left: var(--bs-gutter-x, 0.75rem);
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .portfolio .portfolio-nav .nav .nav-item {
+    flex-basis: 46%;
+    justify-content: space-between;
+  }
+  .portfolio .portfolio-nav .nav .nav-item .nav-link {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  .portfolio .portfolio-section {
+    padding-top: 80px;
   }
 }
 

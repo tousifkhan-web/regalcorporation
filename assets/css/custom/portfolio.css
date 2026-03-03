@@ -1,0 +1,179 @@
+/* banner start  *************************************************/
+
+.p-banner .container .wrapper {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.p-banner .container .wrapper .inner-box {
+  max-width: 60%;
+}
+
+.p-banner .hc-5 {
+  text-transform: uppercase;
+  color: var(--primarycolour);
+}
+
+.p-banner .bnr-txt {
+  line-height: 1;
+  font-size: clamp(2.5rem, 0.714rem + 4.762vw, 5rem);
+  /* scale between 40px at 600px and 80px at 1440px */
+}
+
+.p-banner .bnr-txt span {
+  color: #6b7280;
+}
+.p-banner p {
+  color: var(--grey);
+}
+
+/* portfolio start *-********************** */
+
+.portfolio .nav-item .nav-link {
+  border: 1px solid var(--grey);
+  border-radius: 30px;
+  padding: 8px 24px;
+  color: var(--grey);
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio .nav-item .nav-link:hover {
+  border-color: var(--primarycolour);
+  color: var(--primarycolour);
+}
+
+.portfolio .portfolio-content {
+  position: relative;
+}
+
+.portfolio .portfolio-section {
+  padding-top: 100px;
+}
+
+.portfolio .portfolio-content .port-card .card-img {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio .portfolio-content .card-img img {
+  width: 100%;
+  height: auto;
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+}
+
+.portfolio .portfolio-content .card-img .image-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(237, 221, 83, 0) 100%
+  );
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio .portfolio-content .port-card:hover .card-img img {
+  transform: scale(1.05);
+}
+
+.portfolio .portfolio-content .port-card:hover .card-img .image-hover {
+  opacity: 1;
+}
+
+.portfolio .portfolio-content .port-card .card-img a {
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+  color: var(--grey);
+  display: inline-block;
+  font-size: 20px;
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio .portfolio-content .port-card .card-img a:hover {
+  color: var(--primarycolour);
+}
+
+.portfolio .portfolio-content .port-card:hover .hc-5 {
+  color: var(--primarycolour);
+}
+
+.portfolio .portfolio-content .port-card .hc-5 {
+  font-size: clamp(1.25rem, 1.027rem + 0.595vw, 1.563rem);
+  /* scale between 20px at 600px and 25px at 1440px */
+  margin-bottom: 4px;
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio .portfolio-content .port-card p {
+  color: var(--grey);
+}
+
+/* Contact us start ************************** */
+.description-logo {
+  padding: 100px 0px;
+  position: relative;
+}
+.description-heading {
+  background: url(../../images/description-heading-img/cta_bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 30px;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+.description-heading > .hc-2 {
+  margin-bottom: 40px;
+}
+.description-heading > .hc-2 span {
+  font-style: italic;
+}
+.left-sec a {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+  transition: all 100ms ease-in-out;
+}
+
+.left-sec a:hover {
+  color: var(--primarycolour);
+  border: 1px solid var(--primarycolour);
+}
+
+.left-sec a::after {
+  content: "";
+  position: relative;
+  height: 2px;
+  width: 80%;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+}
+
+.left-sec a:hover::after {
+  background-color: var(--primarycolour);
+  transform: scaleX(1);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}

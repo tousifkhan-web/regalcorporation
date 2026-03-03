@@ -1,3 +1,22 @@
+// active status change in navbar
+const currentFile = window.location.pathname.split("/").pop() || "index.html";
+const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+navLinks.forEach((link) => {
+  link.classList.remove("active");
+
+  let linkFile = link.getAttribute("href").split("/").pop();
+
+  // Convert "/" to index.html
+  if (link.getAttribute("href") === "/") {
+    linkFile = "index.html";
+  }
+
+  if (linkFile === currentFile) {
+    link.classList.add("active");
+  }
+});
+
 //  AOS / Animate On scroll
 
 AOS.init({
