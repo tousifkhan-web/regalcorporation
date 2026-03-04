@@ -27,3 +27,37 @@
 .p-banner p {
   color: var(--grey);
 }
+
+/* contact section start ************************** */
+
+.contact-sec {
+  margin-bottom: 100px;
+}
+
+.contact-sec .contact-wrap {
+  padding: 48px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 20px;
+}
+
+.contact-sec .contact-wrap label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.contact-sec .contact-wrap input,
+.contact-sec .contact-wrap textarea {
+  display: block;
+  color: var(--white);
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  background: none;
+  border-radius: 10px;
+}
+
+.contact-sec .contact-wrap input::placeholder,
+.contact-sec .contact-wrap textarea::placeholder {
+  color: var(--grey);
+}
