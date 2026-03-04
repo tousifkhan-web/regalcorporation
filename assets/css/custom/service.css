@@ -1,0 +1,58 @@
+/* banner start  *************************************************/
+
+.p-banner .container .wrapper {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.p-banner .container .wrapper .inner-box {
+  max-width: 70%;
+}
+
+.p-banner .hc-5 {
+  text-transform: uppercase;
+  color: var(--primarycolour);
+}
+
+.p-banner .bnr-txt {
+  line-height: 1;
+  font-size: clamp(2.5rem, 1.161rem + 3.571vw, 4.375rem);
+  /* scale between 40px at 600px and 70px at 1440px */
+}
+
+.p-banner .bnr-txt span {
+  color: #6b7280;
+}
+.p-banner p {
+  color: var(--grey);
+}
+
+/* service start here ************************* */
+
+.service .service-box .service-img {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.service .service-box .service-img img {
+  width: 100%;
+  height: auto;
+}
+
+.service .service-box .service-content p {
+  color: var(--grey);
+}
+
+.service .service-box .service-content ul {
+  padding-left: 12px;
+}
+
+.service .service-box .service-content ul li::marker {
+  color: var(--primarycolour);
+}
+.service .service-box .service-content ul li {
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 10px;
+}

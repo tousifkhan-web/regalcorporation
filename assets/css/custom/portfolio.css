@@ -7,7 +7,7 @@
 }
 
 .p-banner .container .wrapper .inner-box {
-  max-width: 60%;
+  max-width: 70%;
 }
 
 .p-banner .hc-5 {
@@ -17,8 +17,8 @@
 
 .p-banner .bnr-txt {
   line-height: 1;
-  font-size: clamp(2.5rem, 0.714rem + 4.762vw, 5rem);
-  /* scale between 40px at 600px and 80px at 1440px */
+  font-size: clamp(2.5rem, 1.161rem + 3.571vw, 4.375rem);
+  /* scale between 40px at 600px and 70px at 1440px */
 }
 
 .p-banner .bnr-txt span {
